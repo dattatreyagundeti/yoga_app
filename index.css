@@ -56,7 +56,7 @@
 
 .section-1-content-con,.section-3-content-con,.section-6-content,.section-7-content-con,.section-9-content-con,.section-10{
     position: relative;
-    animation: cons 2s 1s ;
+    animation: cons 3s 1s ;
 }
 @keyframes cons {
     0%   {bottom:-500px;}
