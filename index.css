@@ -97,17 +97,9 @@
     margin: 10px 0px;
 }
 
-@media screen and (min-width:768px) and (max-width:992px){
-    .odd-section{
-        background-size: cover;
-    }
-    .even-section{
-        background-color: yellow;
-        background-size: cover;
-        height: 600px;
-    }
+.section-1-mimg,.section-3-mimg,.section-5-mimg,.section-7-mimg,.section-9-mimg{
+    width: 50%;
 }
-
 
 /* First- Section */
 
