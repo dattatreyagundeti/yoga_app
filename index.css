@@ -80,26 +80,6 @@
 
 }
 
-.section-1-mimg,.section-3-mimg,.section-5-mimg,.section-9-mimg {
-    width: 50%;
-    position: relative;
-    animation: imgs 5s 1s infinite;
-}
-@keyframes imgs {
-    0%   {left:-100px;}
-    100% {left:0px;}
-  }
-
-.section-1-content-con,.section-3-content-con,.section-6-content,.section-7-content-con,.section-9-content-con,.section-10{
-    position: relative;
-    animation: cons 3s 1s ;
-}
-@keyframes cons {
-    0%   {bottom:-500px;}
-    100% {bottom:0px;}
-  }
-
-
 .odd-section{
     height: 500px;
     padding: 25px;
@@ -131,6 +111,26 @@
 
 /* First- Section */
 
+/* section-1 animation css */
+.section-1:hover .section-1-content-con{
+    position: relative;
+    animation: cons 3s 0s ;
+}
+@keyframes cons {
+    0%   {bottom:-300px;}
+    100% {bottom:0px;}
+}
+
+.section-1:hover .section-1-mimg{
+    position: relative;
+    animation: imgs 3s 0s;
+}
+@keyframes imgs {
+    0%   {left:-100px;}
+    100% {left:0px;}
+}
+
+
 .section-1-content-con{
     text-align: center;
     padding: 15px;
@@ -145,8 +145,6 @@
     margin: 0px;
     font-style: italic;
 }
-
-  
 
 span{
     color: orange;
@@ -196,7 +194,7 @@ span{
     padding: 0px 50px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center;  
 }
 .section-2-card{
     background-color: white;
@@ -209,14 +207,8 @@ span{
     border-radius: 15px;
     height: 50%;
     width: 15%;
-    animation: crd-2 3s 1s;
-    position: relative;
 }
 
-@keyframes crd-2 {
-    0%   {bottom:-500px;}
-    100% {bottom:0px;}
-  }
 
 .section-2-card-img{
     background-color: yellow;
@@ -231,6 +223,17 @@ span{
 }
 .card-img{
     height: 50px;
+}
+
+/* section-2 animation */
+.section-2:hover .section-2-card{
+    animation: crds 3s 0s;
+    position: relative;
+}
+
+@keyframes crds {
+    0%   {bottom:-300px;}
+    100% {bottom:0px;}
 }
 
 @media screen and (min-width:768px) and (max-width:992px){
@@ -269,6 +272,7 @@ span{
 }
 
 
+
 /* third-section */
 .section-3-content-con{
     padding: 25px;
@@ -290,6 +294,26 @@ li{
 .third-section-para{
     font-size: 20px;
 }
+
+/* section-3 animation css */
+.section-3:hover .section-3-content-con{
+    position: relative;
+    animation: cons 3s 0s ;
+}
+@keyframes cons {
+    0%   {bottom:-500px;}
+    100% {bottom:0px;}
+}
+
+.section-3:hover .section-3-mimg{
+    position: relative;
+    animation: imgs 3s 0s;
+}
+@keyframes imgs {
+    0%   {left:-100px;}
+    100% {left:0px;}
+}
+
 
 @media screen and (min-width:768px) and (max-width:992px){
     .section-3{
@@ -356,14 +380,7 @@ li{
     margin: 0px 15px;
     width: 25%;
     height: 70%;
-    animation: crd-4 3s 1s;
-    position: relative;
-
 }
-@keyframes crd-4 {
-    0%   {bottom:-500px;}
-    100% {bottom:0px;}
-  }
 
 .section-4-card-img{
     height: 100px;
@@ -371,18 +388,34 @@ li{
     border-radius: 50%;
     background-color: yellow;
     padding: 8px;
-    animation: crd-img 3s 1s;
 }
-@keyframes crd-img {
-    0%   {rotate:deg;}
-    100% {rotate:360deg;}
-  }
 
 .section-4-card-para{
     font-size: 21px;
     text-align: center;
     font-style: italic;
 }
+/* section-4 animation */
+.section-4:hover .section-4-card{
+    animation: crds 3s 0s;
+    position: relative;
+}
+
+@keyframes crds {
+    0%   {bottom:-300px;}
+    100% {bottom:0px;}
+}
+
+.section-4:hover .section-4-card-img{
+    animation: crd-img 3s 0s;
+    position: relative;
+}
+
+@keyframes crd-img {
+    0%   {rotate:deg;}
+    100% {rotate:360deg;}
+  }
+
 @media screen and (min-width:992px) and (max-width:1200px){
     .section-4-card{
         width: 25%;
@@ -429,6 +462,26 @@ li{
     color: yellow;
     font-size: 80px;
 }
+/* section-5 animation css */
+.section-5:hover .section-5-content-con{
+    position: relative;
+    animation: cons-5 2s 0s ;
+}
+@keyframes cons-5 {
+    0%   {bottom:-300px;}
+    100% {bottom:0px;}
+}
+
+.section-5:hover .section-5-mimg{
+    position: relative;
+    animation: imgs-5 2s 0s;
+}
+@keyframes imgs-5 {
+    0%   {left:-100px;}
+    100% {left:0px;}
+}
+
+
 @media screen and (min-width:768px) and (max-width:992px){
     .section-5{
         flex-direction: column;
@@ -502,6 +555,25 @@ li{
     padding-left: 35px;
     width: 50%;
 }
+/* section-6 animation css */
+.section-6:hover .section-6-content{
+    position: relative;
+    animation: cons-6 2s 0s ;
+}
+@keyframes cons-6 {
+    0%   {bottom:-300px;}
+    100% {bottom:0px;}
+}
+
+.section-6:hover .mob-img{
+    position: relative;
+    animation: imgs 2s 0s;
+}
+@keyframes imgs {
+    0%   {left:-100px;}
+    100% {left:0px;}
+}
+
 
 
 @media screen and (min-width:768px) and (max-width:992px){
@@ -583,6 +655,24 @@ li{
 .section-7-mimg{
     width: 50%;
 
+}
+/* section-7 animation css */
+.section-7:hover .section-7-content-con{
+    position: relative;
+    animation: cons-7 3s 0s ;
+}
+@keyframes cons-7 {
+    0%   {right:-500px;}
+    100% {right:0px;}
+}
+
+.section-7:hover .section-7-mimg{
+    position: relative;
+    animation: imgs-7 3s 0s;
+}
+@keyframes imgs-7 {
+    0%   {left:-500px;}
+    100% {left:0px;}
 }
 
    
@@ -765,6 +855,24 @@ li{
 .section-9-content-con-head{
     font-size: 40px;
     color: gray;
+}
+/* section-9 animation css */
+.section-9:hover .section-9-content-con{
+    position: relative;
+    animation: cons-9 3s 0s ;
+}
+@keyframes cons-9 {
+    0%   {right:-500px;}
+    100% {right:0px;}
+}
+
+.section-9:hover .section-9-mimg{
+    position: relative;
+    animation: imgs-9 3s 0s;
+}
+@keyframes imgs-9 {
+    0%   {left:-500px;}
+    100% {left:0px;}
 }
 @media screen and (min-width:768px) and (max-width:992px){
     .section-9{
